@@ -4,4 +4,4 @@
 
 This program is a basic, tile-based evolution simulation. Each creature is controlled by a basic neural network, and the neural network changes over time as the better creatures are selected for.
 
-!(https://github.com/Jonwu25/portfolio/blob/main/images/Screenshot%202026-03-30%20161449.png)
+![](https://github.com/Jonwu25/portfolio/blob/main/images/Screenshot%202026-03-30%20161449.png)
