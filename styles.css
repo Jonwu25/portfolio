@@ -1,104 +1,104 @@
-/* General Page Styling */
+/* Page Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: white;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #111827;
-    padding: 20px;
     text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    margin: 0;
-    color: #38bdf8;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-nav {
-    margin-top: 10px;
-}
-
+/* Navigation */
 nav a {
-    color: white;
+    color: #ffe082;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #ffffff;
 }
 
 /* Sections */
 section {
-    padding: 40px 20px;
+    padding: 50px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
 }
 
-/* Headings */
+/* Titles */
 h2 {
-    color: #38bdf8;
+    color: #ffe082;
+    border-bottom: 2px solid #ffe082;
+    padding-bottom: 10px;
 }
 
-h3 {
-    color: #7dd3fc;
-}
-
-/* Skills List */
+/* Skills */
 ul {
-    list-style-type: square;
+    padding-left: 20px;
 }
 
-/* Project Cards */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Projects */
 article {
-    background-color: #1e293b;
+    background-color: rgba(0, 0, 0, 0.25);
     padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #ffe082;
+    border-radius: 10px;
 }
 
-/* Buttons and Links */
-button,
-a {
-    display: inline-block;
-    margin-top: 10px;
-}
-
+/* Buttons */
 button {
-    background-color: #38bdf8;
-    color: #0f172a;
+    background-color: #ffe082;
+    color: #1f1c2c;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 30px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0ea5e9;
+    background-color: #ffffff;
 }
 
-article a {
-    color: #38bdf8;
-    text-decoration: none;
+/* Links */
+a {
+    color: #ffd54f;
 }
 
-article a:hover {
-    text-decoration: underline;
+a:hover {
+    color: white;
 }
 
 /* Footer */
 footer {
-    background-color: #111827;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
     margin-top: 20px;
 }
 
 /* Horizontal Lines */
 hr {
-    border: 1px solid #334155;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
