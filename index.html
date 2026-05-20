@@ -1,1 +1,133 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #222;
+        background: #f7f9fc;
+      }
+      header {
+        background: #273c75;
+        color: #fff;
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+      .section {
+        margin-bottom: 2.5rem;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        padding: 1.8rem;
+      }
+      h1, h2, h3 {
+        margin-top: 0;
+      }
+      .project-list,
+      .skill-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .project-item,
+      .skill-item {
+        margin-bottom: 1.2rem;
+        padding: 1rem;
+        border-radius: 8px;
+        background: #f4f7fb;
+      }
+      .project-item h3,
+      .skill-item h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+      }
+      .project-item p,
+      .skill-item p {
+        margin: 0;
+      }
+      .highlight {
+        color: #273c75;
+        font-weight: 700;
+      }
+      .contact-list {
+        display: grid;
+        gap: 0.8rem;
+      }
+      a.button {
+        display: inline-block;
+        background: #00a8ff;
+        color: #fff;
+        padding: 0.9rem 1.4rem;
+        border-radius: 50px;
+        text-decoration: none;
+        margin-top: 1rem;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem 0;
+        color: #6b7280;
+      }
+      @media (min-width: 768px) {
+        .grid-2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Name/h1>
+      <p>Desc</p>
+    </header>
+    <main class="container">
+      <section class="section">
+        <h2>About Me</h2>
+        <p>
+          desc
+        </p>
+      </section>
+      <section class="section">
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li class="project-item">
+            <h3>Proj Name</h3>
+            <p>
+              Desc
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="grid-2">
+          <div class="skill-item">
+            <h3>Skill Category</h3>
+            <p>Languages</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2>Contact</h2>
+        <p>Contact things</p>
+        <div class="contact-list">
+          <!---<a class="button" href="mailto:john.doe@example.com">Email Me</a>-->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright thing</p>
+    </footer>
+  </body>
+</html>
