@@ -64,6 +64,66 @@ article {
     border-radius: 10px;
 }
 
+.content-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#activities .media-card,
+#codesamples .media-card {
+    grid-template-columns: 1fr;
+}
+
+.media-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.code-sample-card {
+    border-left: 5px solid #ffe082;
+}
+
+.code-block {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 224, 130, 0.35);
+    border-radius: 12px;
+    padding: 16px;
+    overflow-x: auto;
+    color: #f8f8f2;
+    font-family: "Courier New", monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+.code-block code {
+    display: block;
+    white-space: pre;
+}
+
+.image-slot {
+    min-height: 140px;
+    border: 2px dashed rgba(255, 224, 130, 0.6);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    overflow: hidden;
+    padding: 0;
+}
+
+.image-slot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.media-card h3 {
+    margin-top: 0;
+}
+
 /* Buttons */
 button {
     background-color: #ffe082;

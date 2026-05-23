@@ -14,10 +14,10 @@
     <h1>My Programming Portfolio</h1>
 
     <nav>
-      <a href="#about">About</a> |
-      <a href="#skills">Skills</a> |
+      <a href="#certifications">Certifications</a> |
+      <a href="#activities">Official Activities</a> |
       <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
+      <a href="#codesamples">Code Samples</a>
     </nav>
 
     <hr>
@@ -25,12 +25,7 @@
 
   <!-- Hero Section -->
   <section>
-    <h2>Hello, I'm Your Name</h2>
-
-    <p>
-      I am a programmer passionate about web development,
-      software engineering, and building useful applications.
-    </p>
+    <h2>Hello, I'm Jonathan Wu</h2>
 
     <a href="#projects">
         <button>View My Work</button>
@@ -39,25 +34,36 @@
     <hr>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
 
-    <p>
-      desc
-    </p>
+    <div class="content-grid">
+      <article class="media-card">
+        <div class="image-slot">
+          <img src="images/Computer Programming 2 Java.png" alt="Computer Programming 2 Java certificate">
+        </div>
+        <div>
+          <h3>Computer Programming 2 Java</h3>
+        </div>
+      </article>
 
-    <hr>
-  </section>
+      <article class="media-card">
+        <div class="image-slot">
+          <img src="images/Computer Programming Advanced.png" alt="Computer Programming Advanced certificate">
+        </div>
+        <div>
+          <h3>Computer Programming Advanced</h3>
+        </div>
+      </article>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-
-    <ul>
-      <li>Python</li>
-      <li>Java</li>
-    </ul>
+      
+      <article class="media-card">
+        <div>
+          <h3>AP CSA (awaiting results)</h3>
+        </div>
+      </article>
+    </div>
 
     <hr>
   </section>
@@ -66,58 +72,127 @@
   <section id="projects">
     <h2>Projects</h2>
 
-    <article>
-      <h3>KonQuest</h3>
+    <div class="content-grid">
+      <article class="media-card">
+        <div class="image-slot"><img src="images/KonQuest.png" alt="KonQuest project image"></div>
+        <div>
+          <h3>KonQuest</h3>
+          <p>A game using Java and Processing's core jar file.</p>
+          <a href="https://github.com/CFlory-Programming/AdvProgrammingGroupProject">View Project</a>
+        </div>
+      </article>
 
-      <p>
-        A game using Java and Processing's core jar file.
-      </p>
+      <article class="media-card">
+        <div class="image-slot"><img src="images/Evolution Simulator.png" alt="Evolution Simulator project image"></div>
+        <div>
+          <h3>Evolution Simulator</h3>
+          <p>A evolution simulator using Java and Processing's core jar file, with a goal of simulating natural selection and evolution.</p>
+          <a href="https://github.com/Jonwu25/AdvProgrammingIndvProject">View Project</a>
+        </div>
+      </article>
 
-      <a href="https://github.com/CFlory-Programming/AdvProgrammingGroupProject">View Project</a>
-    </article>
+      <article class="media-card">
+        <div class="image-slot"><img src="images/Minimal Character Tic Tac Toe.png" alt="Minimal Character Tic Tac Toe project image"></div>
+        <div>
+          <h3>Minimal Character Tic Tac Toe</h3>
+          <p>A console-based tic tac toe game using Java, with a goal of minimal characters.</p>
+          <a href="https://github.com/Jonwu25/TicTacToeMinChar">View Project</a>
+        </div>
+      </article>
 
-    <br>
-
-    <article>
-      <h3>Evolution Simulator</h3>
-
-      <p>
-        A evolution simulator using Java and Processing's core jar file, with a goal of simulating natural selection and evolution.
-      </p>
-
-      <a href="https://github.com/Jonwu25/AdvProgrammingIndvProject">View Project</a>
-    </article>
-
-    <br>
-
-    <article>
-      <h3>Minimal Character Tic Tac Toe</h3>
-
-      <p>
-        A console-based tic tac toe game using Java, with a goal of minimal characters.
-      </p>
-
-      <a href="https://github.com/Jonwu25/TicTacToeMinChar">View Project</a>
-    </article>
+      <article class="media-card">
+        <div class="image-slot"><img src="images/Physics Simulation.png" alt="Physics Simulation project image"></div>
+        <div>
+          <h3>Physics Simulation</h3>
+          <p>A physics simulation game using Processing made entirely from scratch.</p>
+          <a href="https://github.com/Jonwu25/TestThing">View Project</a>
+        </div>
+      </article>
+    </div>
 
     <hr>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
+  <!-- Official Activities -->
+  <section id="activities">
+    <h2>Official Activities</h2>
 
-    <p>Email: yourname@email.com</p>
-    <p>GitHub: github.com/yourusername</p>
-    <p>LinkedIn: linkedin.com/in/yourusername</p>
+    <div class="content-grid">
+      N/A
+    </div>
+
+    <hr>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <hr>
+  <!-- Code Samples -->
+  <section id="codesamples">
+    <h2>Code Samples</h2>
 
-    <p>© 2026 Your Name. All rights reserved.</p>
-  </footer>
+    <div class="content-grid">
+      <article class="media-card code-sample-card">
+        <div>
+          <h3>Recursively moving through a non-binary tree</h3>
+          <pre class="code-block"><code>public HashMap<ArrayList<Integer>, Vector>[] handleCollisions(ArrayList<Integer> loc) {
+        Node cur = shapes.get(loc);
+        HashMap<ArrayList<Integer>, Vector>[] res = (HashMap<ArrayList<Integer>, Vector>[]) new HashMap[2];
+        res[0] = new HashMap<ArrayList<Integer>, Vector>();
+        res[1] = new HashMap<ArrayList<Integer>, Vector>();
+        if (cur.children == null) { // Base Case
+            return res;
+        }
+        for(int i = 0; i < cur.children.size(); i++) {
+            ...
+            // Passes objects through special collision methods
+            // Different methods for different types of collisions (e.g. circle-circle, circle-polygon, etc.)
+        }
+        for (int i = 0; i < cur.children.size(); i++) {
+            ArrayList<Integer> newLoc = new ArrayList<>(loc);
+            newLoc.add(i);
+            HashMap<ArrayList<Integer>, Vector>[] childRes = handleCollisions(newLoc); // Recursive call
+            res = merge(res, childRes); // Merge
+        }
+        return res;
+    }
+}</code></pre>
+        </div>
+      </article>
+
+      <article class="media-card code-sample-card">
+        <div>
+          <h3>Ternary Statement (edited for readability)</h3>
+          <pre class="code-block"><code>
+        System.out.println((checkWin() == 0) ? "tie" : checkWin() + " win");</code></pre>
+        </div>
+      </article>
+
+      <article class="media-card code-sample-card">
+        <div>
+          <h3>Physics update loop (Upcasting)</h3>
+          <pre class="code-block"><code>public void update(ArrayList<Integer> loc) {
+        Node cur = shapes.get(loc);
+        if (cur.children == null) {
+            return;
+        }
+        if (Circle.class.isInstance(cur.data)) {
+            Circle c = (Circle)cur.data;
+            c.update();
+        }
+        if (Polygon.class.isInstance(cur.data)) {
+            Polygon p = (Polygon)cur.data;
+            p.update();
+        }
+        for (int i = 0; i < cur.children.size(); i++) {
+            ArrayList<Integer> newLoc = new ArrayList<>(loc);
+            newLoc.add(i);
+            update(newLoc);
+        }
+    }</code></pre>
+        </div>
+      </article>
+    </div>
+
+    <hr>
+  </section>
 
 </body>
 </html>
